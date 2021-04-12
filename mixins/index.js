@@ -4,6 +4,7 @@ function createMixins (lib, hammerlib, mylib) {
   var ret = {};
 
   require('./swipablepresentationcreator')(lib, hammerlib, ret);
+  require('./candidatepresentationcreator')(lib, ret);
 
   mylib.mixins = ret;
 }
